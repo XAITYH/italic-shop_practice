@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.bundleUpHeader {
+    background-color: #383230;
+    height: 30px;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.bundleUpHeaderHolder {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    max-width: 1016px;
+    margin: auto;
+}
+
+.bundleUp {
+    color: #fff;
+    font-weight: 400;
+    margin-left: 1%;
+}
+
+.Membership {
+    color: #fff;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: 3.4%;
+}
+
+.Rewards {
+    color: #fff;
+    font-weight: 400;
+    margin-right: 1%;
+}
+
+.mainHeader {
+    background-color: #FEFDFC;
+}
+
+.headerHolder {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 61px;
+    background-color: inherit;
+    max-width: 1016px;
+}
+
+.logo {
+    height: 20px;
+    width: 81px;
+    margin-left: 1%;
+}
+
+.mainHeaderUl {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 0;
+    margin-left: auto;
+    gap: 1.5rem;
+}
+
+.mainHeaderLi {
+    cursor: pointer;
+}
+
+.signIn {
+    font-family: "Inter", sans-serif;
+    margin-right: 2%;
+    font-size: 12px;
+    margin-left: auto;
+}
+
+.searchLink {
+    margin-right: 2.2%;
+}
+
+.marketLink {
+    margin-right: 1%;
+}
+
+.luxury {
+    height: 236px;
+    background-color: #F9F7F4;
+}
+
+.luxuryHolder {
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 77px;
+}
+
+.luxuryH1 {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 76.8px;
+    letter-spacing: 2px;
+}
+
+.x {
+    position: relative;
+    left: 50px;
+    top: 14px;
+}
+
+.skinCareHolder {
+    display: flex;
+    justify-content: center;
+    background-color: #e1dcc9;
+}
+
+.unbranded {
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.unbrandedH2 {
+    font-family: "EB Garamond", serif;
+    font-size: 34px;
+    line-height: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    width: 590px;
+    text-align: center;
+}
+
+.learnMore {
+    font-family: "Inter", sans-serif;
+    margin-top: 40px;
+    font-size: 14px;
+    line-height: 14px;
+    border-bottom: solid 1px #000;
+    padding-bottom: 8px;
+    font-weight: 400;
+}
+
+.brands {
+    height: 80px;
+    background-color: #F9F7F4;
+}
+
+.brandsHandler {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.brandsList {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 0;
+}
+
+.skincarePhotos {
+    height: 510px;
+}
+
+.skincarePhotosHandler {
+    display: flex;
+    justify-content: center;
+    gap: 43px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.skincareH3 {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.skincareP {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    margin-top: 15px;
+    max-width: 500px;
+}
+
+.newArrivals {
+    height: 595px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newArrivalsHandler {
+    display: flex;
+}
+
+.shopNewContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickView {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 42px;
+    width: 257px;
+    background-color: #fff;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.quickView:hover {
+    filter: invert(1);
+}
+
+.shopNewButton {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    height: 34px;
+    width: 153px;
+    background-color: #fff;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shopNewButton:hover {
+    filter: invert(1);
+}
+
+.card {
+    height: 435px;
+}
+
+.new {
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    width: 33px;
+    height: 18px;
+}
+
+.newArrivalsHandler {
+    
+}
+
+.newArrivalsHeading {
+    font-family: "EB Garamond", serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.exploreNew {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+span {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 1199px) {
+    .skinCareHolder {
+        height: 360px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .skincareDiv:first-child {
+        margin-bottom: 20px;
+    }
+}
