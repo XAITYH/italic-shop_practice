@@ -2,6 +2,8 @@
     margin: 0;
 }
 
+/* Scrollbar styling */
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -170,6 +172,8 @@ li {
     font-weight: 400;
 }
 
+/* Brands lists */
+
 .brands {
     height: 80px;
     background-color: #F9F7F4;
@@ -190,6 +194,8 @@ li {
     gap: 50px;
     padding: 0;
 }
+
+/* Skincare */
 
 .skincarePhotos {
     height: 510px;
@@ -219,6 +225,8 @@ li {
     max-width: 500px;
 }
 
+/* Shop New and New Arrivals */
+
 .newArrivals {
     height: 595px;
     display: flex;
@@ -228,76 +236,112 @@ li {
 
 .newArrivalsHandler {
     display: flex;
-}
-
-.shopNewContainer {
-    display: flex;
-    flex-direction: column;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-}
-
-.quickView {
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    height: 42px;
-    width: 257px;
-    background-color: #fff;
-    border: solid 1px #000;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.quickView:hover {
-    filter: invert(1);
-}
-
-.shopNewButton {
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    height: 34px;
-    width: 153px;
-    background-color: #fff;
-    border: solid 1px #000;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.shopNewButton:hover {
-    filter: invert(1);
-}
-
-.card {
-    height: 435px;
-}
-
-.new {
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    width: 33px;
-    height: 18px;
-}
-
-.newArrivalsHandler {
-    
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .newArrivalsHeading {
     font-family: "EB Garamond", serif;
     font-size: 36px;
     font-weight: 400;
+    margin-top: 5.45rem;
+    letter-spacing: 2.4px;
 }
 
 .exploreNew {
     font-family: "Inter", sans-serif;
     font-size: 15px;
     font-weight: 400;
+    margin-top: 2.5rem;
+}
+
+.shopNewContainer {
+    position: relative;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shopNewButton {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 42px;
+    width: 153px;
+    background-color: #fff;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 34px;
+}
+
+.shopNewButton:hover {
+    filter: invert(1);
+}
+
+/* pReact Component */
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 41.5px;
+    height: 435px;
+    width: 289px;
+    background-color: #fff;
+}
+
+.arrivals_card_preact {
+    margin-right: 175px;
+}
+
+.shopExampleImg {
+    border-top: 1px solid #E0DBD2;
+    border-right: 1px solid #E0DBD2;
+    border-left: 1px solid #E0DBD2;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    width: 33px;
+    height: 18px;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    background-color: #fff;
+}
+
+.inCardContainer {
+    height: 146px;
+    width: 289px;
+    border-bottom: 1px solid #E0DBD2;
+    border-right: 1px solid #E0DBD2;
+    border-left: 1px solid #E0DBD2;
+}
+
+.quickView {
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 34px;
+    width: 257px;
+    background-color: #fff;
+    border: solid 1px #000;
+    cursor: pointer;
+    position: absolute;
+    bottom: 144px;
+    left: 16px;
+    transition: 0.5s;
+}
+
+.quickView:hover {
+    filter: invert(1);
 }
 
 span {
@@ -308,11 +352,61 @@ span {
     gap: 10px;
 }
 
-.card {
-    height: 435px;
-    width: 289px;
-    background-color: #fff;
+.shopExHeader {
+    font-family: "EB Garamond", serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin-top: 15px;
+    margin-left: 17px;
+    width: 218px;
 }
+
+.shopExDescr {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+.authorAndBvlgariContainer {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-left: 15px;
+    gap: 7px;
+}
+
+.costAndColorsCont {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+
+.cost {
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.colors {
+    font-family: 'IBM Plex Mono', monospace, sans-serif;
+    font-size: 11px;
+    font-weight: 200;
+    margin-left: 13px;
+}
+
+.dot {
+    width: 2px;
+    height: 2px;
+}
+
+/* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
     .skinCareHolder {
