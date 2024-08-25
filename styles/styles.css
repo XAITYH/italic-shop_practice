@@ -308,6 +308,12 @@ span {
     gap: 10px;
 }
 
+.card {
+    height: 435px;
+    width: 289px;
+    background-color: #fff;
+}
+
 @media (max-width: 1199px) {
     .skinCareHolder {
         height: 360px;
