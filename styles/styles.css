@@ -1,421 +1,518 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 /* Scrollbar styling */
 
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: #9e9e9e;
+  border-radius: 10px;
+  background-color: #9e9e9e;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
-    cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .bundleUpHeader {
-    background-color: #383230;
-    height: 30px;
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-size: 11px;
-    text-decoration: none;
+  background-color: #383230;
+  height: 30px;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 11px;
+  text-decoration: none;
 }
 
 .bundleUpHeaderHolder {
-    height: inherit;
-    display: flex;
-    align-items: center;
-    max-width: 1016px;
-    margin: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  max-width: 1016px;
+  margin: auto;
 }
 
 .bundleUp {
-    color: #fff;
-    font-weight: 400;
-    margin-left: 1%;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 1%;
 }
 
 .Membership {
-    color: #fff;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: 3.4%;
+  color: #fff;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: 3.4%;
 }
 
 .Rewards {
-    color: #fff;
-    font-weight: 400;
-    margin-right: 1%;
+  color: #fff;
+  font-weight: 400;
+  margin-right: 1%;
 }
 
 .mainHeader {
-    background-color: #FEFDFC;
+  background-color: #fefdfc;
 }
 
 .headerHolder {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    height: 61px;
-    background-color: inherit;
-    max-width: 1016px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 61px;
+  background-color: inherit;
+  max-width: 1016px;
 }
 
 .logo {
-    height: 20px;
-    width: 81px;
-    margin-left: 1%;
+  height: 20px;
+  width: 81px;
+  margin-left: 1%;
 }
 
 .mainHeaderUl {
-    display: flex;
-    font-family: "Inter", sans-serif;
-    text-decoration: none;
-    font-size: 12px;
-    padding: 0;
-    margin-left: auto;
-    gap: 1.5rem;
+  display: flex;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 0;
+  margin-left: auto;
+  gap: 1.5rem;
 }
 
 .mainHeaderLi {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .signIn {
-    font-family: "Inter", sans-serif;
-    margin-right: 2%;
-    font-size: 12px;
-    margin-left: auto;
+  font-family: "Inter", sans-serif;
+  margin-right: 2%;
+  font-size: 12px;
+  margin-left: auto;
 }
 
 .searchLink {
-    margin-right: 2.2%;
+  margin-right: 2.2%;
 }
 
 .marketLink {
-    margin-right: 1%;
+  margin-right: 1%;
 }
 
 .luxury {
-    height: 236px;
-    background-color: #F9F7F4;
+  height: 236px;
+  background-color: #f9f7f4;
 }
 
 .luxuryHolder {
-    display: flex;
-    max-width: 600px;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    padding-top: 77px;
+  display: flex;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 77px;
 }
 
 .luxuryH1 {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 76.8px;
-    letter-spacing: 2px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 76.8px;
+  letter-spacing: 2px;
 }
 
 .x {
-    position: relative;
-    left: 50px;
-    top: 14px;
+  position: relative;
+  left: 50px;
+  top: 14px;
 }
 
 .skinCareHolder {
-    display: flex;
-    justify-content: center;
-    background-color: #e1dcc9;
+  display: flex;
+  justify-content: center;
+  background-color: #e1dcc9;
 }
 
 .unbranded {
-    height: 365px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .unbrandedH2 {
-    font-family: "EB Garamond", serif;
-    font-size: 34px;
-    line-height: 48px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    width: 590px;
-    text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  width: 590px;
+  text-align: center;
 }
 
 .learnMore {
-    font-family: "Inter", sans-serif;
-    margin-top: 40px;
-    font-size: 14px;
-    line-height: 14px;
-    border-bottom: solid 1px #000;
-    padding-bottom: 8px;
-    font-weight: 400;
+  font-family: "Inter", sans-serif;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 14px;
+  border-bottom: solid 1px #000;
+  padding-bottom: 8px;
+  font-weight: 400;
 }
 
 /* Brands lists */
 
 .brands {
-    height: 80px;
-    background-color: #F9F7F4;
+  height: 80px;
+  background-color: #f9f7f4;
 }
 
 .brandsHandler {
-    margin: auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: inherit;
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
 }
 
 .brandsList {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
 }
 
 /* Skincare */
 
 .skincarePhotos {
-    height: 510px;
+  height: 510px;
 }
 
 .skincarePhotosHandler {
-    display: flex;
-    justify-content: center;
-    gap: 43px;
-    margin-top: 100px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 43px;
+  margin-top: 100px;
+  flex-wrap: wrap;
 }
 
 .skincareH3 {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 25px;
-    margin-top: 5px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 5px;
 }
 
 .skincareP {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    color: #555555;
-    margin-top: 15px;
-    max-width: 500px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+  margin-top: 15px;
+  max-width: 500px;
 }
 
 /* Shop New and New Arrivals */
 
 .newArrivals {
-    height: 595px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 555px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .newArrivalsHandler {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .newArrivalsHeading {
-    font-family: "EB Garamond", serif;
-    font-size: 36px;
-    font-weight: 400;
-    margin-top: 5.45rem;
-    letter-spacing: 2.4px;
+  font-family: "EB Garamond", serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 6.7rem;
+  letter-spacing: 2.4px;
 }
 
 .exploreNew {
-    font-family: "Inter", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 2.5rem;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 2.5rem;
 }
 
 .shopNewContainer {
-    position: relative;
-    right: 120px;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .shopNewButton {
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    height: 42px;
-    width: 153px;
-    background-color: #fff;
-    border: solid 1px #000;
-    cursor: pointer;
-    transition: 0.5s;
-    margin-top: 34px;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 42px;
+  width: 153px;
+  background-color: #fff;
+  border: solid 1px #000;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 34px;
 }
 
 .shopNewButton:hover {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 /* pReact Component */
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 41.5px;
-    height: 435px;
-    width: 289px;
-    background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 20px;
+  height: 435px;
+  width: 289px;
+  background-color: #fff;
 }
 
 .arrivals_card_preact {
-    margin-right: 175px;
+  display: flex;
+  position: relative;
+  left: 60px;
+  gap: 8px;
 }
 
 .shopExampleImg {
-    border-top: 1px solid #E0DBD2;
-    border-right: 1px solid #E0DBD2;
-    border-left: 1px solid #E0DBD2;
+  border-top: 1px solid #e0dbd2;
+  border-right: 1px solid #e0dbd2;
+  border-left: 1px solid #e0dbd2;
 }
 
 .new {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    width: 33px;
-    height: 18px;
-    position: absolute;
-    top: 13px;
-    left: 11px;
-    background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  width: 33px;
+  height: 18px;
+  position: absolute;
+  top: 13px;
+  left: 11px;
+  background-color: #fff;
 }
 
 .inCardContainer {
-    height: 146px;
-    width: 289px;
-    border-bottom: 1px solid #E0DBD2;
-    border-right: 1px solid #E0DBD2;
-    border-left: 1px solid #E0DBD2;
+  display: flex;
+  flex-direction: column;
+  height: 146px;
+  width: 289px;
+  border-bottom: 1px solid #e0dbd2;
+  border-right: 1px solid #e0dbd2;
+  border-left: 1px solid #e0dbd2;
 }
 
 .quickView {
-    font-family: "Inter", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    height: 34px;
-    width: 257px;
-    background-color: #fff;
-    border: solid 1px #000;
-    cursor: pointer;
-    position: absolute;
-    bottom: 144px;
-    left: 16px;
-    transition: 0.5s;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 34px;
+  width: 257px;
+  background-color: #fff;
+  border: solid 1px #000;
+  cursor: pointer;
+  position: absolute;
+  bottom: 144px;
+  left: 16px;
+  transition: 0.5s;
 }
 
 .quickView:hover {
-    filter: invert(1);
+  filter: invert(1);
 }
 
 span {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .shopExHeader {
-    font-family: "EB Garamond", serif;
-    font-weight: 400;
-    font-size: 16px;
-    letter-spacing: 0.4px;
-    margin-top: 15px;
-    margin-left: 17px;
-    width: 218px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 245px;
 }
 
 .shopExDescr {
-    font-family: "Inter", sans-serif;
-    font-weight: 200;
-    font-size: 12px;
-    line-height: 12px;
-    margin-top: 5px;
-    margin-left: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 5px;
+  margin-left: 15px;
 }
 
 .authorAndBvlgariContainer {
-    font-family: "Inter", sans-serif;
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    margin-top: 12px;
-    margin-left: 15px;
-    gap: 7px;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-left: 16px;
+  gap: 7px;
 }
 
 .costAndColorsCont {
-    display: flex;
-    margin-top: 15px;
-    margin-left: 17px;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 17px;
 }
 
 .cost {
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-size: 11px;
-    display: flex;
-    align-items: center;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
 }
 
 .colors {
-    font-family: 'IBM Plex Mono', monospace, sans-serif;
-    font-size: 11px;
-    font-weight: 200;
-    margin-left: 13px;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  margin-left: 13px;
 }
 
 .dot {
-    width: 2px;
-    height: 2px;
+  width: 2px;
+  height: 2px;
+}
+
+/* LineBreak with the svg icon in the middle */
+
+.lineBreakCont {
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineBreak {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.lineBreakContHandler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1040px;
+  gap: 21px;
+}
+
+.lineBreakContHandler::before,
+.lineBreakContHandler::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: #000;
+  width: inherit;
 }
 
 /* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
-    .skinCareHolder {
-        height: 360px;
-    }
+  .skinCareHolder {
+    height: 360px;
+  }
 }
 
 @media (max-width: 1070px) {
-    .skincareDiv:first-child {
-        margin-bottom: 20px;
-    }
+  .skincareDiv:first-child {
+    margin-bottom: 20px;
+  }
+
+  .lineBreakContHandler {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1041px) {
+  .newArrivals {
+    margin-top: 400px;
+  }
+
+  .newArrivalsHandler {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .exploreNew {
+    margin-top: 10px;
+  }
+
+  .shopNewContainer {
+    right: 0;
+  }
+
+  .shopNewButton {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .arrivals_card_preact {
+    margin-top: 30px;
+    left: 0;
+  }
+
+  .card {
+    bottom: 0;
+  }
+
+  .lineBreakCont {
+    margin-top: 200px;
+  }
+
+  .lineBreakContHandler {
+    width: 590px;
+  }
+
+  .brands {
+    height: 100px;
+  }
+
+  .brandsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .brandsList li {
+    text-align: center;
+  }
 }

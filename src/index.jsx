@@ -39,6 +39,7 @@ export function Card(props) {
 if (typeof window !== "undefined") {
   hydrateRoot(
     document.querySelector(".arrivals_card_preact"),
+    <>
     <Card
       new={_new}
       img_src={imgShopEx + "1.png"}
@@ -48,5 +49,15 @@ if (typeof window !== "undefined") {
       cost="315"
       num_colors="2"
     />
+    <Card
+      new={_new}
+      img_src={imgShopEx + "2.png"}
+      header="14k Solid Gold Interlocking Necklace"
+      author={vanCleef}
+      bvlgari={_bvlgari}
+      cost="350"
+      num_colors="2"
+    />
+    </>
   );
 }
