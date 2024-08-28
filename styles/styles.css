@@ -245,7 +245,7 @@ li {
   font-family: "EB Garamond", serif;
   font-size: 36px;
   font-weight: 400;
-  margin-top: 6.7rem;
+  margin-top: 6.95rem;
   letter-spacing: 2.4px;
 }
 
@@ -287,7 +287,7 @@ li {
   flex-direction: column;
   align-items: center;
   position: relative;
-  bottom: 20px;
+  bottom: 17px;
   height: 435px;
   width: 289px;
   background-color: #fff;
@@ -331,9 +331,14 @@ li {
   border-left: 1px solid #e0dbd2;
 }
 
+.inInCardContainer {
+  margin-left: 17.5px;
+  margin-top: 17px;
+}
+
 .quickView {
   font-family: "Inter", sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 400;
   height: 34px;
   width: 257px;
@@ -341,8 +346,8 @@ li {
   border: solid 1px #000;
   cursor: pointer;
   position: absolute;
-  bottom: 144px;
-  left: 16px;
+  bottom: 145.5px;
+  left: 17px;
   transition: 0.5s;
 }
 
@@ -350,12 +355,18 @@ li {
   filter: invert(1);
 }
 
-span {
+.quickViewSpan {
   text-align: center;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  align-items: start;
+  justify-content: start;
+  height: 20px;
+  gap: 9.5px;
+  margin-left: 73px;
+}
+
+.fullscreenQV {
+  align-self: center;
 }
 
 .shopExHeader {
@@ -363,8 +374,7 @@ span {
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.4px;
-  margin-top: 15px;
-  margin-left: 15px;
+  line-height: 19.2px;
   width: 245px;
 }
 
@@ -373,8 +383,7 @@ span {
   font-weight: 200;
   font-size: 12px;
   line-height: 12px;
-  margin-top: 5px;
-  margin-left: 15px;
+  margin-top: 7px;
 }
 
 .authorAndBvlgariContainer {
@@ -382,15 +391,13 @@ span {
   font-size: 12px;
   display: flex;
   align-items: center;
-  margin-top: 12px;
-  margin-left: 16px;
+  margin-top: 11px;
   gap: 7px;
 }
 
 .costAndColorsCont {
   display: flex;
   margin-top: 15px;
-  margin-left: 17px;
 }
 
 .cost {
@@ -410,6 +417,10 @@ span {
 .dot {
   width: 2px;
   height: 2px;
+}
+
+.bvlgari {
+  margin-left: -2px;
 }
 
 /* LineBreak with the svg icon in the middle */
@@ -433,6 +444,7 @@ span {
   align-items: center;
   width: 1040px;
   gap: 21px;
+  margin-top: 6px;
 }
 
 .lineBreakContHandler::before,
