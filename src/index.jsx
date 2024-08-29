@@ -4,14 +4,13 @@ import { hydrateRoot } from "preact/compat/client";
 // (NEW Classes)
 // new
 // shopExampleImg
-// newCost
 // inCardContainer
 // quickView
 // quickViewSpan
 // shopExHeader
 // shopExDescr
 // authorAndBvlgariContainer
-// 
+// newCost
 
 // (HIIT Classes)
 // trending
@@ -40,7 +39,7 @@ export function Card(props) {
     <div class="card">
       <div class={props.class_new}>{props.new}</div>
       <img class={props.class_imgShopEx} src={props.img_src} alt="shop example" />
-      <div class="">
+      <div class={props.class_inCardCont}>
         <div class="inInCardContainer">
           <button class={props.class_quickView}>
             <span class={props.class_quickViewSpan}>
@@ -54,7 +53,7 @@ export function Card(props) {
           </button>
           <h3 class={props.class_headerClass}>{props.header}</h3>
           <p class={props.class_descrClass}>Same manufacturer as</p>
-          <div class={props.class_authotAnd}>
+          <div class={props.class_authorAnd}>
             <p>{props.author}</p>
             <img class="dot" src="public/dot.svg" alt="" />
             <p class="bvlgari">{props.bvlgari}</p>
@@ -77,6 +76,14 @@ if (typeof window !== "undefined") {
     document.querySelector(".arrivals_card_preact"),
     <>
       <Card
+        class_new="new"
+        class_imgShopEx="shopExampleImg"
+        class_quickView="quickView"
+        class_quickViewSpan="quickViewSpan"
+        class_inCardCont="inCardContainer"
+        class_headerClass="shopExHeader"
+        class_descrClass="shopExDescr"
+        class_authorAnd="authorAndBvlgariContainer"
         new={_new}
         img_src={imgShopEx + "1.png"}
         header="14k Solid Gold Diamond Drop Chain Earrings"
@@ -86,6 +93,14 @@ if (typeof window !== "undefined") {
         num_colors="2"
       />
       <Card
+        class_new="new"
+        class_imgShopEx="shopExampleImg"
+        class_quickView="quickView"
+        class_quickViewSpan="quickViewSpan"
+        class_inCardCont="inCardContainer"
+        class_headerClass="shopExHeader"
+        class_descrClass="shopExDescr"
+        class_authorAnd="authorAndBvlgariContainer"
         new={_new}
         img_src={imgShopEx + "2.png"}
         header="14k Solid Gold Interlocking Necklace"
