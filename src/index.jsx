@@ -1,20 +1,49 @@
 import "../styles/styles.css";
 import { hydrateRoot } from "preact/compat/client";
 
+// (NEW Classes)
+// new
+// shopExampleImg
+// newCost
+// inCardContainer
+// quickView
+// quickViewSpan
+// shopExHeader
+// shopExDescr
+// authorAndBvlgariContainer
+// 
+
+// (HIIT Classes)
+// trending
+// hiitCardCont
+// hiitInCardCont
+// hiitQuickView
+// hiitQuickViewSpan
+// hiitExHeader
+// hiitExDescr
+// hiitAuthAndStella
+// hiitStella
+// hiitCostAndColors
+// hiitCost
+// hiitColors
+
 const _new = "NEW";
 const imgShopEx = "public/shopEx";
 const vanCleef = "Van Cleef";
 const _bvlgari = "BVLGARI";
 
+const vilebrequin = "Vilebrequin";
+const stella = "Stella McCartney";
+
 export function Card(props) {
   return (
     <div class="card">
-      <div class="new">{props.new}</div>
-      <img class="shopExampleImg" src={props.img_src} alt="shop example" />
-      <div class="inCardContainer">
+      <div class={props.class_new}>{props.new}</div>
+      <img class={props.class_imgShopEx} src={props.img_src} alt="shop example" />
+      <div class="">
         <div class="inInCardContainer">
-          <button class="quickView">
-            <span class="quickViewSpan">
+          <button class={props.class_quickView}>
+            <span class={props.class_quickViewSpan}>
               <img
                 class="fullscreenQV"
                 src="public/fullscreen.svg"
@@ -23,10 +52,10 @@ export function Card(props) {
               Quick View
             </span>
           </button>
-          <h3 class="shopExHeader">{props.header}</h3>
-          <p class="shopExDescr">Same manufacturer as</p>
-          <div class="authorAndBvlgariContainer">
-            <p class="author">{props.author}</p>
+          <h3 class={props.class_headerClass}>{props.header}</h3>
+          <p class={props.class_descrClass}>Same manufacturer as</p>
+          <div class={props.class_authotAnd}>
+            <p>{props.author}</p>
             <img class="dot" src="public/dot.svg" alt="" />
             <p class="bvlgari">{props.bvlgari}</p>
           </div>
@@ -63,6 +92,19 @@ if (typeof window !== "undefined") {
         author={vanCleef}
         bvlgari={_bvlgari}
         cost="350"
+        num_colors="2"
+      />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".hiitCards"),
+    <>
+      <Card
+        img_src={imgShopEx + "3.png"}
+        header="Aura Contour Jacket"
+        author={vilebrequin}
+        bvlgari={stella}
+        cost="58"
         num_colors="2"
       />
     </>

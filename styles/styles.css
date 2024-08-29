@@ -304,9 +304,7 @@ button:hover {
 }
 
 .shopExampleImg {
-  border-top: 1px solid #e0dbd2;
-  border-right: 1px solid #e0dbd2;
-  border-left: 1px solid #e0dbd2;
+  border: 1px solid #e0dbd2;
 }
 
 .new {
@@ -514,6 +512,14 @@ button:hover {
   bottom: 4px;
   cursor: pointer;
   transition: 0.5s;
+}
+
+/* HIIT pReact */
+
+.hiitExImgs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 2fr repeat(2, 1fr);
 }
 
 /* Media Queries to make site responsive */
