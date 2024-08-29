@@ -15,7 +15,12 @@ export function Card(props) {
         <div class="inInCardContainer">
           <button class="quickView">
             <span class="quickViewSpan">
-              <img class="fullscreenQV" src="public/fullscreen.svg" alt="quick view" /> Quick View
+              <img
+                class="fullscreenQV"
+                src="public/fullscreen.svg"
+                alt="quick view"
+              />{" "}
+              Quick View
             </span>
           </button>
           <h3 class="shopExHeader">{props.header}</h3>
