@@ -14,6 +14,7 @@ import { hydrateRoot } from "preact/compat/client";
 
 // (HIIT Classes)
 // trending
+// hiitExImg
 // hiitCardCont
 // hiitInCardCont
 // hiitQuickView
@@ -36,11 +37,11 @@ const stella = "Stella McCartney";
 
 export function Card(props) {
   return (
-    <div class="card">
+    <div class={props.class_card}>
       <div class={props.class_new}>{props.new}</div>
-      <img class={props.class_imgShopEx} src={props.img_src} alt="shop example" />
+      <img class="shopExampleImg" src={props.img_src} alt="shop example" />
       <div class={props.class_inCardCont}>
-        <div class="inInCardContainer">
+        <div class={props.class_inInCardCont}>
           <button class={props.class_quickView}>
             <span class={props.class_quickViewSpan}>
               <img
@@ -76,11 +77,12 @@ if (typeof window !== "undefined") {
     document.querySelector(".arrivals_card_preact"),
     <>
       <Card
+        class_card="card"
         class_new="new"
-        class_imgShopEx="shopExampleImg"
         class_quickView="quickView"
         class_quickViewSpan="quickViewSpan"
         class_inCardCont="inCardContainer"
+        class_inInCardCont="inInCardContainer"
         class_headerClass="shopExHeader"
         class_descrClass="shopExDescr"
         class_authorAnd="authorAndBvlgariContainer"
@@ -93,11 +95,13 @@ if (typeof window !== "undefined") {
         num_colors="2"
       />
       <Card
+        class_card="card"
         class_new="new"
         class_imgShopEx="shopExampleImg"
         class_quickView="quickView"
         class_quickViewSpan="quickViewSpan"
         class_inCardCont="inCardContainer"
+        class_inInCardCont="inInCardContainer"
         class_headerClass="shopExHeader"
         class_descrClass="shopExDescr"
         class_authorAnd="authorAndBvlgariContainer"
@@ -115,6 +119,14 @@ if (typeof window !== "undefined") {
     document.querySelector(".hiitCards"),
     <>
       <Card
+        class_card="hiitCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
         img_src={imgShopEx + "3.png"}
         header="Aura Contour Jacket"
         author={vilebrequin}

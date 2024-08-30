@@ -278,7 +278,6 @@ li {
   margin-top: 34px;
 }
 
-
 button:hover {
   filter: invert(1);
 }
@@ -327,6 +326,10 @@ button:hover {
   flex-direction: column;
   height: 146px;
   width: 289px;
+}
+
+.inCardContainer,
+.hiitCardCont {
   border-bottom: 1px solid #e0dbd2;
   border-right: 1px solid #e0dbd2;
   border-left: 1px solid #e0dbd2;
@@ -352,10 +355,6 @@ button:hover {
   transition: 0.5s;
 }
 
-.quickView:hover {
-  filter: invert(1);
-}
-
 .quickViewSpan {
   text-align: center;
   display: flex;
@@ -370,30 +369,47 @@ button:hover {
   align-self: center;
 }
 
+/* Shop Example Headers */
+
 .shopExHeader {
-  font-family: "EB Garamond", serif;
-  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.4px;
-  line-height: 19.2px;
   width: 245px;
 }
 
+.shopExHeader,
+.hiitExHeader {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  line-height: 19.2px;
+}
+
+/* Shop Example Descriptions */
+
 .shopExDescr {
+  margin-top: 7px;
+}
+
+.shopExDescr,
+.hiitExDescr {
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-size: 12px;
   line-height: 12px;
-  margin-top: 7px;
 }
 
+/* Authors */
+
 .authorAndBvlgariContainer {
+  margin-top: 11px;
+  gap: 7px;
+}
+
+.authorAndBvlgariContainer, .hiitAuthAndStella {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   display: flex;
   align-items: center;
-  margin-top: 11px;
-  gap: 7px;
 }
 
 .costAndColorsCont {
@@ -514,12 +530,93 @@ button:hover {
   transition: 0.5s;
 }
 
+.shopEx {
+}
+
 /* HIIT pReact */
 
 .hiitExImgs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 2fr repeat(2, 1fr);
+  grid-template-rows: repeat(2, 357px);
+  gap: 40px;
+  margin-left: 6.667%;
+  margin-top: 36px;
+}
+
+.hiitCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 357px;
+  width: 230px;
+  background-color: #fff;
+}
+
+.trending {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  width: 33px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #fff;
+}
+
+.hiitCardCont {
+  display: flex;
+  flex-direction: column;
+  height: 127px;
+  width: 230px;
+}
+
+.hiitInCardCont {
+  margin-left: 17px;
+  margin-top: 16.5px;
+}
+
+.hiitQuickView {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 34px;
+  width: 198px;
+  background-color: #fff;
+  border: solid 1px #000;
+  cursor: pointer;
+  position: absolute;
+  bottom: 125.5px;
+  left: 15.5px;
+  transition: 0.5s;
+}
+
+.hiitQuickViewSpan {
+  text-align: center;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  height: 20px;
+  gap: 12px;
+  margin-left: 43px;
+}
+
+.hiitExHeader {
+  font-size: 14px;
+}
+
+.hiitExDescr {
+  margin-top: 6px;
+}
+
+.hiitAuthAndStella {
+  margin-top: 11.5px;
+  gap: 8px;
 }
 
 /* Media Queries to make site responsive */
