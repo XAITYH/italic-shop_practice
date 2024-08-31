@@ -17,9 +17,18 @@
   background-color: #9e9e9e;
 }
 
+h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: #000;
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -230,7 +239,7 @@ li {
   flex-wrap: wrap;
 }
 
-.newArrivalsHandler {
+.newArrivalsHolder {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -326,6 +335,7 @@ button:hover {
   border-bottom: 1px solid #e0dbd2;
   border-right: 1px solid #e0dbd2;
   border-left: 1px solid #e0dbd2;
+  text-align: start;
 }
 
 .inInCardContainer {
@@ -716,6 +726,136 @@ button:hover {
   color: #555555;
 }
 
+/* Capstone */
+
+.theCapstoneCont {
+  display: flex;
+  justify-content: center;
+  background-color: #F9F7F4;
+  height: 640px;
+  margin-top: -30px;
+}
+
+.theCapstoneHolder {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
+}
+
+.capstoneText {
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  gap: 30px;
+}
+
+.capstoneHeading {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #817A70;
+}
+
+.capstoneDescr {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+.capstoneBtn {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  width: 99px;
+  height: 40px;
+  background-color: #383230;
+  transition: 0.3s;
+}
+
+/* Trend Items */
+
+.trendItems {
+  display: flex;
+  justify-content: center;
+  height: 585px;
+}
+
+.trendHeading {
+  font-size: 28px;
+  line-height: 38.4px;
+  letter-spacing: 0.8px;
+  align-self: flex-start;
+}
+
+.trendItemsHolder {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: inherit;
+  width: 1040px;
+  row-gap: 21px;
+}
+
+.trendItemsPreact {
+  display: flex;
+  gap: 8px;
+}
+
+/* Trend Preact */
+
+.trendCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: #fff;
+  height: 367px;
+  width: 202px;
+}
+
+.trendCard:nth-child(n+2) .trending{
+  width: 61px;
+  color: #fff;
+  background-color: #817A70;
+}
+
+.trendCard .hiitQuickView {
+  width: 170px;
+  height: 34px;
+  bottom: 165px;
+}
+
+.trendCard .hiitQuickViewSpan {
+  margin-left: 29px;
+  gap: 10px;
+}
+
+.trendCard .hiitCardCont {
+  width: 202px;
+  height: 165px;
+}
+
+.trendCard .hiitExHeader {
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  max-width: 160px;
+}
+
+.trendCard .hiitAuthAndStella {
+  max-width: 168px;
+  flex-wrap: wrap;
+}
+
+.trendCard:last-child .hiitAuthAndStella {
+  column-gap: 10px;
+  row-gap: 2px;
+}
+
 /* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
@@ -724,22 +864,31 @@ button:hover {
   }
 }
 
-@media (max-width: 1070px) {
-  .skincareDiv:first-child {
-    margin-bottom: 20px;
+@media (max-width: 1114px) {
+  .shopEx {
+    position: absolute;
+    visibility: hidden;
   }
 
-  .lineBreakContHandler {
-    width: 600px;
+  .hiitExImgs {
+    justify-content: center;
   }
 }
 
-@media (max-width: 1041px) {
-  .newArrivals {
-    margin-top: 400px;
+@media (max-width: 1042px) {
+  .lineBreakContHandler {
+    width: 600px;
   }
 
-  .newArrivalsHandler {
+  .imageExCont {
+    height: 420px;
+  }
+
+  .newArrivals {
+    margin-top: 200px;
+  }
+
+  .newArrivalsHolder {
     flex-direction: column;
     text-align: center;
   }
@@ -770,7 +919,7 @@ button:hover {
     margin-top: 200px;
   }
 
-  .lineBreakContHandler {
+  .lineBreakContHolder {
     width: 590px;
   }
 

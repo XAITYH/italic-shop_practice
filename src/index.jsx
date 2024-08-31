@@ -28,7 +28,7 @@ import { hydrateRoot } from "preact/compat/client";
 // hiitColors
 
 const _new = "NEW";
-const imgShopEx = "public/shopEx";
+const imgShopEx = "shopEx";
 const vanCleef = "Van Cleef";
 const _bvlgari = "BVLGARI";
 
@@ -36,8 +36,9 @@ const vilebrequin = "Vilebrequin";
 const stella = "Stella McCartney";
 
 const catalogImg = "catalogImg";
-
 const imageEx = "imageEx";
+const trendImg = "trendImg";
+const valueImg = "valueImg";
 
 export function Card(props) {
   return (
@@ -48,11 +49,7 @@ export function Card(props) {
         <div class={props.class_inInCardCont}>
           <button class={props.class_quickView}>
             <span class={props.class_quickViewSpan}>
-              <img
-                class="fullscreenQV"
-                src="public/fullscreen.svg"
-                alt="quick view"
-              />{" "}
+              <img class="fullscreenQV" src="fullscreen.svg" alt="quick view" />{" "}
               Quick View
             </span>
           </button>
@@ -60,12 +57,12 @@ export function Card(props) {
           <p class={props.class_descrClass}>Same manufacturer as</p>
           <div class={props.class_authorAnd}>
             <p>{props.author}</p>
-            <img class="dot" src="public/dot.svg" alt="" />
+            <img class="dot" src="dot.svg" alt="" />
             <p class="bvlgari">{props.bvlgari}</p>
           </div>
           <div class="costAndColorsCont">
             <p class="cost">
-              <img src="public/$.svg" alt="dollars" />
+              <img src="$.svg" alt="dollars" />
               {props.cost}
             </p>
             <p class="colors">{props.num_colors} COLORS</p>
@@ -91,6 +88,16 @@ export function ImageExamples(props) {
       <img class="imageEx" src={props.img_src} alt="" />
       <h2 class="imageHeading">{props.img_heading}</h2>
       <p className="imageDescr">{props.img_descr}</p>
+    </div>
+  );
+}
+
+export function ValueCard(props) {
+  return (
+    <div class="valueCard">
+      <h2 class="valueCardHeader">{props.header}</h2>
+      <p class="valueCardDescr">{props.descr}</p>
+      <img class="valueCardImg" src={props.img_src} alt="" />
     </div>
   );
 }
@@ -248,6 +255,119 @@ if (typeof window !== "undefined") {
         img_src={imageEx + "4.png"}
         img_heading="Indulgent Bedding"
         img_descr="From breathable flax linen to silky luxe sateen, cozy up to bedding essentials for everyone."
+      />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".trendItemsPreact"),
+    <>
+      <Card
+        new="TRENDING"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={trendImg + "1.png"}
+        header="Rafa Backpack"
+        author="Away"
+        bvlgari="Boss"
+        cost="85"
+        num_colors="3"
+      />
+      <Card
+        new="ATELIER"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={trendImg + "2.png"}
+        header="Cleo Oversized Cashmere Scarf"
+        author="Burberry"
+        bvlgari="Max Mara"
+        cost="130"
+        num_colors="3"
+      />
+      <Card
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={trendImg + "3.png"}
+        header="Aluminum Carry-On Suitcase"
+        author="Away"
+        bvlgari="Samsonite"
+        cost="248"
+        num_colors="2"
+      />
+      <Card
+        new="ATELIER"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={trendImg + "4.png"}
+        header="Amara Cashmere Wrap"
+        author="Burberry"
+        bvlgari="Max Mara"
+        cost="135"
+        num_colors="2"
+      />
+      <Card
+        new="ATELIER"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={trendImg + "5.png"}
+        header="Priscilla Silk Halter Mini Dress"
+        author="Stella McCartney"
+        bvlgari="Max Mara"
+        cost="125"
+        num_colors="3"
+      />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".valueCards"),
+    <>
+      <ValueCard
+        header="Atelier-Grade Materials"
+        descr="Fine, rare materials for optimal performance and durability."
+        img_src={valueImg + "1.png"}
+      />
+      <ValueCard
+        header="Radical Value"
+        descr="We believe luxury is defined by the quality of product, not by the price tag."
+        img_src={valueImg + "2.png"}
+      />
+      <ValueCard
+        header="World-Class Craftsmanship"
+        descr="The world's best manufacturers, the same as top luxury brands."
+        img_src={valueImg + "3.png"}
       />
     </>
   );
