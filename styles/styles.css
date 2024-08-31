@@ -89,6 +89,7 @@ li {
   padding: 0;
   margin-left: auto;
   gap: 1.5rem;
+  color: #383230;
 }
 
 .mainHeaderLi {
@@ -169,9 +170,17 @@ li {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   line-height: 14px;
-  border-bottom: solid 1px #000;
   padding-bottom: 7px;
   font-weight: 400;
+  background-image: linear-gradient(to right, #000 33%,#0000 33% 66%,#000 66%);
+  background-position: left bottom;
+  background-size: 300% 1px;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+.learnMore:hover {
+  background-position: right bottom;
 }
 
 /* Brands lists */
@@ -203,7 +212,7 @@ li {
   height: 510px;
 }
 
-.skincarePhotosHandler {
+.skincarePhotosHolder {
   display: flex;
   justify-content: center;
   gap: 43px;
@@ -282,7 +291,7 @@ button:hover {
   filter: invert(1);
 }
 
-/* pReact Component */
+/* Preact Component */
 
 .card {
   display: flex;
@@ -382,6 +391,7 @@ button:hover {
   font-weight: 400;
   letter-spacing: 0.4px;
   line-height: 19.2px;
+  color: #383230;
 }
 
 /* Shop Example Descriptions */
@@ -393,9 +403,10 @@ button:hover {
 .shopExDescr,
 .hiitExDescr {
   font-family: "Inter", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
+  color: #8C8C8C;
 }
 
 /* Authors */
@@ -530,7 +541,7 @@ button:hover {
   transition: 0.5s;
 }
 
-/* HIIT pReact */
+/* HIIT Preact */
 
 .hiitExImgs {
   display: flex;
@@ -647,7 +658,7 @@ button:hover {
   margin-top: 42px;
 }
 
-/* Catalog pReact */
+/* Catalog Preact */
 
 .catalog {
   display: flex;
@@ -660,7 +671,15 @@ button:hover {
   display: flex;
   flex-direction: column;
   width: 140px;
-  height: 259px;
+  cursor: pointer;
+}
+
+.catalogExample img {
+  transition: opacity 0.3s;
+}
+
+.catalogExample:hover img {
+  opacity: 0.5;
 }
 
 .catalogDescr {
@@ -670,6 +689,47 @@ button:hover {
   line-height: 12px;
   letter-spacing: -0.1px;
   margin-top: 7px;
+}
+
+/* Images Preact*/
+
+.imagesPreact {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 510px;
+  justify-content: center;
+  gap: 40px;
+  padding-top: 43px;
+}
+
+.imageExCont {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+
+.imageEx {
+  width: 500px;
+  height: 333px;
+}
+
+.imageHeading {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33.6px;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+}
+
+.imageDescr {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px;
+  max-width: 497px;
+  margin-top: 10px;
+  color: #555555;
 }
 
 /* Media Queries to make site responsive */

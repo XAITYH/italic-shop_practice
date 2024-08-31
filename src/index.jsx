@@ -37,6 +37,8 @@ const stella = "Stella McCartney";
 
 const catalogImg = "catalogImg";
 
+const imageEx = "imageEx";
+
 export function Card(props) {
   return (
     <div class={props.class_card}>
@@ -83,7 +85,32 @@ export function Catalog(props) {
   );
 }
 
+export function ImageExamples(props) {
+  return (
+    <div className="imageExCont">
+      <img class="imageEx" src={props.img_src} alt="" />
+      <h2 class="imageHeading">{props.img_heading}</h2>
+      <p className="imageDescr">{props.img_descr}</p>
+    </div>
+  );
+}
+
 if (typeof window !== "undefined") {
+  hydrateRoot(
+    document.querySelector(".skincarePhotosHolder"),
+    <>
+      <ImageExamples
+        img_src="skincareSaviours.png"
+        img_heading="Skincare Saviors"
+        img_descr="Upgrade your routine with prestige formulas for every skin type."
+      />
+      <ImageExamples
+        img_src="makeYrslfHome.png"
+        img_heading="Make Yourself at Home"
+        img_descr="Transform your space with plush bath towels and cozy robes to rival any resort."
+      />
+    </>
+  );
   hydrateRoot(
     document.querySelector(".arrivals_card_preact"),
     <>
@@ -207,6 +234,21 @@ if (typeof window !== "undefined") {
       <Catalog img_src={catalogImg + "5.png"} imgDescr="Men's Clothing" />
       <Catalog img_src={catalogImg + "6.png"} imgDescr="Jewelry" />
       <Catalog img_src={catalogImg + "7.png"} imgDescr="Skincare" />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".imagesPreact"),
+    <>
+      <ImageExamples
+        img_src={imageEx + "3.png"}
+        img_heading="Cookware to Count On"
+        img_descr="Upgrade your meal prep and stick to your resolutions with Italic cookware."
+      />
+      <ImageExamples
+        img_src={imageEx + "4.png"}
+        img_heading="Indulgent Bedding"
+        img_descr="From breathable flax linen to silky luxe sateen, cozy up to bedding essentials for everyone."
+      />
     </>
   );
 }
