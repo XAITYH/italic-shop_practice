@@ -220,22 +220,6 @@ li {
   flex-wrap: wrap;
 }
 
-.skincareH3 {
-  font-family: "EB Garamond", serif;
-  font-weight: 400;
-  font-size: 25px;
-  margin-top: 5px;
-}
-
-.skincareP {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #555555;
-  margin-top: 15px;
-  max-width: 500px;
-}
-
 /* Shop New and New Arrivals */
 
 .newArrivals {
