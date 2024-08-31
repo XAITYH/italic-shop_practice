@@ -530,18 +530,22 @@ button:hover {
   transition: 0.5s;
 }
 
-.shopEx {
-}
-
 /* HIIT pReact */
 
 .hiitExImgs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 357px);
+  display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   margin-left: 6.667%;
   margin-top: 36px;
+}
+
+.hiitCards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  row-gap: 20px;
+  column-gap: 40px;
 }
 
 .hiitCard {
@@ -561,7 +565,7 @@ button:hover {
   font-family: "IBM Plex Mono", monospace, sans-serif;
   font-size: 11px;
   font-weight: 400;
-  width: 33px;
+  width: 68px;
   height: 18px;
   position: absolute;
   top: 12px;

@@ -134,6 +134,56 @@ if (typeof window !== "undefined") {
         cost="58"
         num_colors="2"
       />
+      <Card
+        class_card="hiitCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={imgShopEx + "4.png"}
+        header="Aura Active Sports Tank"
+        author={vilebrequin}
+        bvlgari={stella}
+        cost="39"
+        num_colors="1"
+      />
+      <Card
+        class_card="hiitCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={imgShopEx + "5.png"}
+        header="Aura Active Bodysuit"
+        author={vilebrequin}
+        bvlgari={stella}
+        cost="65"
+        num_colors="2"
+      />
+      <Card
+        new="TRENDING"
+        class_new="trending"
+        class_card="hiitCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={imgShopEx + "6.png"}
+        header="Aura Racerback Sports Bra"
+        author={vilebrequin}
+        bvlgari={stella}
+        cost="25"
+        num_colors="4"
+      />
     </>
   );
 }
