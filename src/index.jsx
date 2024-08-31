@@ -35,6 +35,8 @@ const _bvlgari = "BVLGARI";
 const vilebrequin = "Vilebrequin";
 const stella = "Stella McCartney";
 
+const catalogImg = "catalogImg";
+
 export function Card(props) {
   return (
     <div class={props.class_card}>
@@ -68,6 +70,15 @@ export function Card(props) {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+export function Catalog(props) {
+  return (
+    <div class="catalogExample">
+      <img src={props.img_src} alt="" />
+      <p class="catalogDescr">{props.imgDescr}</p>
     </div>
   );
 }
@@ -184,6 +195,18 @@ if (typeof window !== "undefined") {
         cost="25"
         num_colors="4"
       />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".catalog"),
+    <>
+      <Catalog img_src={catalogImg + "1.png"} imgDescr="Women's Clothing" />
+      <Catalog img_src={catalogImg + "2.png"} imgDescr="Bath" />
+      <Catalog img_src={catalogImg + "3.png"} imgDescr="Kitchen" />
+      <Catalog img_src={catalogImg + "4.png"} imgDescr="Bedding" />
+      <Catalog img_src={catalogImg + "5.png"} imgDescr="Men's Clothing" />
+      <Catalog img_src={catalogImg + "6.png"} imgDescr="Jewelry" />
+      <Catalog img_src={catalogImg + "7.png"} imgDescr="Skincare" />
     </>
   );
 }

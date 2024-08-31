@@ -623,6 +623,55 @@ button:hover {
   gap: 8px;
 }
 
+/* Explore Even More */
+
+.exploreEvenMore {
+  display: flex;
+  justify-content: center;
+  height: 397px;
+}
+
+.expEvenMoreHolder {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  width: 1040px;
+}
+
+.expEvenMoreHeading {
+  font-family: "EB Garamond", serif;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 38.4px;
+  letter-spacing: 0.8px;
+  margin-top: 42px;
+}
+
+/* Catalog pReact */
+
+.catalog {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 22px;
+  flex-wrap: wrap;
+}
+
+.catalogExample {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  height: 259px;
+}
+
+.catalogDescr {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: -0.1px;
+  margin-top: 7px;
+}
+
 /* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
