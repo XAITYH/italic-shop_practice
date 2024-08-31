@@ -17,6 +17,11 @@
   background-color: #9e9e9e;
 }
 
+p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
 h1 {
   font-family: "EB Garamond", serif;
   font-weight: 400;
@@ -224,7 +229,7 @@ li {
 .skincarePhotosHolder {
   display: flex;
   justify-content: center;
-  gap: 43px;
+  gap: 40px;
   margin-top: 100px;
   flex-wrap: wrap;
 }
@@ -249,8 +254,8 @@ li {
   font-family: "EB Garamond", serif;
   font-size: 36px;
   font-weight: 400;
-  margin-top: 6.95rem;
   letter-spacing: 2.4px;
+  margin-top: -30px;
 }
 
 .exploreNew {
@@ -849,11 +854,118 @@ button:hover {
 .trendCard .hiitAuthAndStella {
   max-width: 168px;
   flex-wrap: wrap;
+  row-gap: 2px;
 }
 
-.trendCard:last-child .hiitAuthAndStella {
-  column-gap: 10px;
-  row-gap: 2px;
+.trendCard .bvlgari {
+  margin: 0;
+}
+
+.valueMost {
+  display: flex;
+  justify-content: center;
+  height: 683px;
+  background-color: #F9F7F4;
+}
+
+.valueHolder {
+  width: 1040px;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.valueHeader {
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 2px;
+}
+
+/* Value Preact */
+
+.valueCards {
+  display: flex;
+  gap: 21px;
+}
+
+.valueCard {
+  background-color: #fff;
+  border: solid 1px #000;
+  width: 333px;
+  height: 435px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.valueCardHolder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 271px;
+  gap: 15px;
+}
+
+.valueCardHeader {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28.8px;
+  letter-spacing: 0.6px;
+  margin: 0;
+  display: flex;
+}
+
+.valueCardDescr {
+  position: relative;
+  bottom: 3px;
+  font-size: 14px;
+  line-height: 22.4px;
+}
+
+/* Pet Care*/
+
+.petCare {
+  height: 510px;
+}
+
+.petCare .imageHeading {
+  position: relative;
+  bottom: 3px;
+}
+
+/* Might Like */
+
+.trendItems .mightLike {
+  height: 590px;
+}
+
+/* Might Like Preact */
+
+.mightLikeHolder .trendHeading {
+  margin-top: 5px;
+}
+
+.mightLike .trendCard {
+  height: 372px;
+  position: relative;
+  top: 1.5px;
+}
+
+.mightLike .hiitQuickView {
+  bottom: 170px;
+}
+
+.mightLike .hiitCardCont {
+  height: 170px;
+}
+
+.mightLike .trending {
+  width: 61px;
+  color: #fff;
+  background-color: #817A70;
 }
 
 /* Media Queries to make site responsive */

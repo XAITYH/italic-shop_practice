@@ -14,18 +14,6 @@ import { hydrateRoot } from "preact/compat/client";
 
 // (HIIT Classes)
 // trending
-// hiitExImg
-// hiitCardCont
-// hiitInCardCont
-// hiitQuickView
-// hiitQuickViewSpan
-// hiitExHeader
-// hiitExDescr
-// hiitAuthAndStella
-// hiitStella
-// hiitCostAndColors
-// hiitCost
-// hiitColors
 
 const _new = "NEW";
 const imgShopEx = "shopEx";
@@ -39,6 +27,7 @@ const catalogImg = "catalogImg";
 const imageEx = "imageEx";
 const trendImg = "trendImg";
 const valueImg = "valueImg";
+const likeImg = "mightLike";
 
 export function Card(props) {
   return (
@@ -95,9 +84,11 @@ export function ImageExamples(props) {
 export function ValueCard(props) {
   return (
     <div class="valueCard">
-      <h2 class="valueCardHeader">{props.header}</h2>
-      <p class="valueCardDescr">{props.descr}</p>
-      <img class="valueCardImg" src={props.img_src} alt="" />
+      <div className="valueCardHolder">
+        <h2 class="valueCardHeader">{props.header}</h2>
+        <p class="valueCardDescr">{props.descr}</p>
+        <img class="valueCardImg" src={props.img_src} alt="" />
+      </div>
     </div>
   );
 }
@@ -368,6 +359,110 @@ if (typeof window !== "undefined") {
         header="World-Class Craftsmanship"
         descr="The world's best manufacturers, the same as top luxury brands."
         img_src={valueImg + "3.png"}
+      />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".petCareHolder"),
+    <>
+      <ImageExamples
+        img_src="petCare.png"
+        img_heading="The Pet Edit"
+        img_descr="Your best friend deserves the best. Pamper them with Italic’s pet essentials."
+      />
+      <ImageExamples
+        img_src="winningComb.png"
+        img_heading="A Winning Combination"
+        img_descr="Shop our most popular pairings and enjoy the savings offered through these curated bundles."
+      />
+    </>
+  );
+  hydrateRoot(
+    document.querySelector(".mightLikePreact"),
+    <>
+      <Card
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={likeImg + "1.png"}
+        header="Aura Racerback Tank"
+        author="Vilebrequin"
+        bvlgari="Stella McCartney"
+        cost="28"
+        num_colors="4"
+      />
+      <Card
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={likeImg + "2.png"}
+        header="Aura High Waisted Legging 7/8"
+        author="Vilebrequin"
+        bvlgari="Stella McCartney"
+        cost="40"
+        num_colors="2"
+      />
+      <Card
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={likeImg + "3.png"}
+        header="Linear Short Sleeve Lightweight Tech Tee"
+        author="Vilebrequin"
+        bvlgari="Stella McCartney"
+        cost="25"
+        num_colors="4"
+      />
+      <Card
+        new="ATELIER"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={likeImg + "4.png"}
+        header="Laight Short Hooded Puffer Jacket"
+        author="Mackage"
+        bvlgari="Max Mara"
+        cost="165"
+        num_colors="1"
+      />
+      <Card
+        new="ATELIER"
+        class_new="trending"
+        class_card="trendCard"
+        class_quickView="hiitQuickView"
+        class_quickViewSpan="hiitQuickViewSpan"
+        class_inCardCont="hiitCardCont"
+        class_inInCardCont="hiitInCardCont"
+        class_headerClass="hiitExHeader"
+        class_descrClass="hiitExDescr"
+        class_authorAnd="hiitAuthAndStella"
+        img_src={likeImg + "5.png"}
+        header="Airy Cashmere Crewneck Tee"
+        author="Sandro"
+        bvlgari="Maje"
+        cost="100"
+        num_colors="3"
       />
     </>
   );
