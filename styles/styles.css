@@ -1085,6 +1085,154 @@ button:hover {
 
 /* Footer */
 
+footer {
+  color: #fff;
+  height: 564px;
+  background-color: #383230;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer h1 {
+  font-size: 48px;
+  line-height: 57.6px;
+}
+
+footer h2 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  letter-spacing: 0.6px;
+  color: #E0DBD2;
+}
+
+footer h3 {
+  font-family: "IBM Plex Mono", monospace, sans-serif;
+  font-size: 13px;
+  color: #817A70;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+footer a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #E0DBD2;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+/* Footer Classes */
+
+.footerHolder {
+  display: flex;
+  justify-content: center;
+  max-width: 1040px;
+  column-gap: 100px;
+  margin-top: 70px;
+}
+
+.stayInTouch {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 40px;
+  width: 330px;
+  height: 240px;
+  gap: 20px;
+}
+
+#message {
+  width: 227px;
+  height: 46px;
+  padding: 0;
+  background-color: #383230;
+  border: solid 1px #8C8C8C;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  padding: 0 5px;
+}
+
+#message:focus-visible {
+  outline: none;
+}
+
+.stayInTouch form button {
+  font-family: "Inter", sans-serif;
+  color: #383230;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  width: 77px;
+  height: 50px;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.linksCont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.linksCont:nth-child(2) {
+  left: 12px;
+}
+
+.linksCont li {
+  position: relative;
+  top: 10px;
+}
+
+.rights {
+  display: flex;
+  height: 204px;
+  max-width: 1040px;
+  width: 100%;
+  align-items: flex-end;
+  position: relative;
+  top: 7px;
+}
+
+.rightsHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+}
+
+.rights p {
+  color: #8C8C8C;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  margin-right: 5px;
+}
+
+.rights a {
+  color: #8C8C8C;
+  font-size: 10px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  gap: 25px;
+}
+
 /* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
