@@ -1250,6 +1250,50 @@ footer ul {
   .hiitExImgs {
     justify-content: center;
   }
+
+  .hiitContHolder {
+    text-align: center;
+    align-items: center;
+  }
+
+  .hiitInnerCont {
+    margin: 0;
+  }
+
+  .hiitDescrAndDiscover {
+    width: 500px;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hiitDiscover {
+    width: 100%;
+    height: 50px;
+  }
+
+  .hiitExImgs {
+    gap: 0;
+    margin-left: 0;
+  }
+
+  .trendItems {
+    margin-bottom: 400px;
+  }
+
+  .trendItemsHolder {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .trendHeading {
+    align-self: auto;
+  }
+
+  .trendItemsPreact { 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1042px) {
@@ -1259,10 +1303,6 @@ footer ul {
 
   .imageExCont {
     height: 420px;
-  }
-
-  .newArrivals {
-    margin-top: 200px;
   }
 
   .newArrivalsHolder {
@@ -1292,12 +1332,12 @@ footer ul {
     bottom: 0;
   }
 
-  .lineBreakCont {
-    margin-top: 200px;
-  }
-
   .lineBreakContHolder {
     width: 590px;
+  }
+
+  .lineBreakCont {
+    margin-top: 70px;
   }
 
   .brands {
@@ -1312,5 +1352,56 @@ footer ul {
 
   .brandsList li {
     text-align: center;
+  }
+
+  .theCapstoneCont {
+    margin-top: 100px;
+  }
+
+  .theCapstoneHolder {
+    text-align: center;
+  }
+
+  .capstoneBtn {
+    width: 100%;
+    height: 50px;
+  }
+
+  .capstoneImg {
+    visibility: hidden;
+    position: absolute;
+  }
+  
+  .exploreEvenMore {
+    margin-top: 100px;
+  }
+
+  .expEvenMoreHeading {
+    text-align: center;
+  }
+
+  .expEvenMoreHolder {
+    align-items: center;
+  }
+
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .imagesPreact {
+    padding-top: 600px;
+  }
+}
+
+@media (max-width: 1039px) {
+  .theCapstoneCont {
+    margin-top: 450px;
+  }
+
+  .newArrivals {
+    margin-top: 520px;
   }
 }
