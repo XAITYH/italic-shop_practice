@@ -1402,6 +1402,30 @@ footer ul {
   .imagesPreact {
     padding-top: 600px;
   }
+
+  .valueHeader {
+    text-align: center;
+  }
+
+  .valueMost {
+    height: 1500px;
+  }
+
+  .valueCards {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .valueCard {
+    width: 100%;
+    border: none;
+    border-top: solid 1px #000;
+  }
+
+  .valueCard:last-of-type {
+    border-bottom: solid 1px #000;
+  }
 }
 
 @media (max-width: 1039px) {
