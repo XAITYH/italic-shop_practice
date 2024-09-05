@@ -1233,6 +1233,14 @@ footer ul {
   gap: 25px;
 }
 
+.social a img {
+  transition: filter 0.3s;
+}
+
+.social a:hover img {
+  filter: invert(1) brightness(75%);
+}
+
 /* Media Queries to make site responsive */
 
 @media (max-width: 1199px) {
