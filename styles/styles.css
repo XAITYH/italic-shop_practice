@@ -1285,12 +1285,12 @@ footer ul {
   }
 
   .trendItems {
-    margin-bottom: 400px;
+    margin-bottom: 550px;
   }
 
   .trendItemsHolder {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 300px;
   }
 
   .trendHeading {
@@ -1400,7 +1400,7 @@ footer ul {
   }
 
   .imagesPreact {
-    padding-top: 600px;
+    row-gap: 100px;
   }
 
   .valueHeader {
@@ -1425,6 +1425,22 @@ footer ul {
 
   .valueCard:last-of-type {
     border-bottom: solid 1px #000;
+  }
+
+  .trendItems {
+    margin-bottom: 950px;
+  }
+
+  .trendItemsHolder {
+    margin-top: 750px;
+  }
+
+  .ourCommitment {
+    text-align: center;
+  }
+
+  .commit {
+    font-size: 30px;
   }
 }
 
